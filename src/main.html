@@ -1,0 +1,10 @@
+<h1>Calculando os Juros!</h1>
+<div>Valor:</div>
+<input type="number" step="0.01" [(ngModel)]="valor"/>
+<div>Valor de Interesse:</div>
+<input type="number" step="0.01" [(ngModel)]="rate"/>
+<div>Quantidade de Meses:</div>
+<input type="number"[(ngModel)]="meses"/>
+<hr />
+<div>O valor dos juros é:{{getInterests() | currency}}</div>
+
